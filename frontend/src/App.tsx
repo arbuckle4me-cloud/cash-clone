@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-use-before-define
 import React, { FC } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, useLocation } from 'react-router-dom';
+import { hashouter, useLocation } from 'react-router-dom';
 import { Provider } from 'react-redux'; // eslint-disable-line
 import '../styles/globals.css';
 import { store, User } from './store';
@@ -31,13 +31,13 @@ const DebugRouter = ({ children }: { children: any }) => {
 
 const App: FC<AppProps> = () => {
   return (
-    <BrowserRouter basename='/cash-clone/'>
+    <hashRouter basename='/cash-clone/'>
       <Provider store={store}>
         <DebugRouter>
           <Container />
         </DebugRouter>
       </Provider>
-    </BrowserRouter>
+    </hashrouter>
   );
 };
 
