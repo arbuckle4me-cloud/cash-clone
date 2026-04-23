@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-use-before-define
 import React, { FC } from 'react';
 import { createRoot } from 'react-dom/client';
-import { hashouter, useLocation } from 'react-router-dom';
+import { hashrouter, useLocation } from 'react-router-dom';
 import { Provider } from 'react-redux'; // eslint-disable-line
 import '../styles/globals.css';
 import { store, User } from './store';
